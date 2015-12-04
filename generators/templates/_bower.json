@@ -1,0 +1,22 @@
+{
+  "name": "<%= repo %>",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "<%- author %>",
+  "private": false,
+  "main": [
+    "dist/<%= repo %>.js",
+    "dist/<%= repo %>.min.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "spec",
+    "test",
+    "tests"
+  ],
+  "moduleType": [
+    "globals"
+  ]
+}
