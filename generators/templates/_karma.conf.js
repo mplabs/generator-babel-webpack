@@ -5,7 +5,6 @@ module.exports = function (config) {
     browsers: ['PhantomJS'],
     files: [
       'node_modules/es5-shim/es5-shim.js',
-      'test/test-helper.js',
       'test/**/*.spec.*',
       {pattern: 'src/**/*', watched: true, included: false}
     ],

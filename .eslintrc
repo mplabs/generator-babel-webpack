@@ -1,11 +1,12 @@
 {
-  "parser": "babel-eslint",
+  "extends": "rackt",
   "rules": {
-    "strict": 0,
-    "quotes": [2, "single"]
+    "valid-jsdoc": 2,
+    "no-var": 0,
+    "semi": [ 2, "always" ],
+    "no-console": 0
   },
-  "env": {
-    "browser": true,
-    "node": true
-  }
+  "plugins": [
+    "react"
+  ]
 }

@@ -1,4 +1,9 @@
-# generator-babel-webpack [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url] [![Coverage percentage][coveralls-image]][coveralls-url]
+# generator-babel-webpack
+
+[![npm version](https://img.shields.io/npm/v/generator-babel-webpack.svg?style=flat-square)](https://www.npmjs.com/package/generator-babel-webpack)
+[![npm downloads](https://img.shields.io/npm/dm/generator-babel-webpack.svg?style=flat-square)](https://www.npmjs.com/package/generator-babel-webpack)
+[![Build Status](https://travis-ci.org/Pitzcarraldo/generator-babel-webpack.svg)](https://travis-ci.org/Pitzcarraldo/generator-babel-webpack)
+
 > A Yeoman generator to author libraries in ES2015 (and beyond!) for Node and the browser with webpack.
 
 ## Installation
@@ -24,12 +29,7 @@ Yeoman has a heart of gold. He&#39;s a person with feelings and opinions, but he
 
 MIT © [Minkyu Cho](https://github.com/Pitzcarraldo)
 
-
 [npm-image]: https://badge.fury.io/js/generator-babel-webpack.svg
 [npm-url]: https://npmjs.org/package/generator-babel-webpack
 [travis-image]: https://travis-ci.org/Pitzcarraldo/generator-babel-webpack.svg?branch=master
 [travis-url]: https://travis-ci.org/Pitzcarraldo/generator-babel-webpack
-[daviddm-image]: https://david-dm.org/Pitzcarraldo/generator-babel-webpack.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/Pitzcarraldo/generator-babel-webpack
-[coveralls-image]: https://coveralls.io/repos/Pitzcarraldo/generator-babel-webpack/badge.svg
-[coveralls-url]: https://coveralls.io/r/Pitzcarraldo/generator-babel-webpack

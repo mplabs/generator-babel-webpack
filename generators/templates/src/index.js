@@ -1,7 +1,2 @@
-import Library from './Library';
-import Util from './Util';
-
-export default Library;
-export {
-  Util
-};
+export default from './Library';
+export util from './util';

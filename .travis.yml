@@ -1,4 +1,7 @@
 language: node_js
 node_js:
-  - v5
-  - v4
+  - "5"
+script:
+  - npm run check
+after_success:
+  - npm run coveralls

@@ -12,9 +12,7 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "spec",
-    "test",
-    "tests"
+    "test"
   ],
   "moduleType": [
     "globals"

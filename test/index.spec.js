@@ -1,22 +1,20 @@
-'use strict';
+import path from 'path';
+import os from 'os';
+import { assert, test as helpers } from 'yeoman-generator';
 
-var path = require('path');
-var assert = require('yeoman-generator').assert;
-var helpers = require('yeoman-generator').test;
-var os = require('os');
+describe('generator-babel-webpack', function () {
 
-describe('babel-webpack-library:app', function () {
   before(function (done) {
-    helpers.run(path.join(__dirname, '../generators'))
+    this.timeout(20000);
+    helpers.run(
+      path.join(__dirname, '../generators/index.js'))
       .inDir(path.join(os.tmpdir(), './temp-test'))
       .withOptions({ 'skip-install': true })
       .on('end', done);
   });
 
-  it('creates files', function () {
-    assert.file([
-      'package.json',
-      '.eslintrc'
-    ]);
+  it('should creates files', () => {
+    assert.file([ 'package.json', '.eslintrc' ]);
   });
+
 });
