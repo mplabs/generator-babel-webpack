@@ -1,6 +1,6 @@
 {
   "name": "generator-babel-webpack",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A Yeoman generator to author libraries in ES2015~ for Node and the browser using webpack as the build tool.",
   "repository": "https://github.com/Pitzcarraldo/generator-babel-webpack.git",
   "author": "Minkyu Cho <mrnoname@naver.com>",
@@ -31,6 +31,7 @@
     "prepublish": "npm run clean && npm run build"
   },
   "dependencies": {
+    "babel-runtime": "^6.5.0",
     "chalk": "^1.1.0",
     "git-config": "0.0.6",
     "lodash.camelcase": "^3.0.1",
