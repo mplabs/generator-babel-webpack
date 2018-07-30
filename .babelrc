@@ -1,11 +1,9 @@
 {
   "presets": [
-    "es2015",
-    "es2015-loose",
-    "stage-0",
-    "react"
+    ["@babel/preset-env", { "modules": "commonjs" }],
+    "@babel/preset-react"
   ],
   "plugins": [
-    "transform-runtime"
+    "@babel/plugin-transform-runtime"
   ]
 }

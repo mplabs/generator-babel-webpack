@@ -3,7 +3,7 @@
   "rules": {
     "valid-jsdoc": 2,
     "no-var": 0,
-    "semi": [ 2, "always" ],
+    "semi": [ 0, "never" ],
     "no-console": 0
   },
   "plugins": [

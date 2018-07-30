@@ -1,11 +1,14 @@
 {
   "name": "generator-babel-webpack",
-  "version": "0.1.2",
+  "version": "0.2.0-beta.1",
   "description": "A Yeoman generator to author libraries in ES2015~ for Node and the browser using webpack as the build tool.",
-  "repository": "https://github.com/Pitzcarraldo/generator-babel-webpack.git",
+  "repository": "https://github.com/mplabs/generator-babel-webpack.git",
   "author": "Minkyu Cho <mrnoname@naver.com>",
+  "contributors": [
+    "Felix Dürrwald <mplabs@mplabs.de>"
+  ],
   "license": "MIT",
-  "homepage": "https://github.com/Pitzcarraldo/generator-babel-webpack",
+  "homepage": "https://github.com/mplabs/generator-babel-webpack",
   "files": [
     "generators"
   ],
@@ -17,8 +20,12 @@
     "es6",
     "esnext"
   ],
+  "engines": {
+    "node": "8.x",
+    "npm": "6.x"
+  },
   "scripts": {
-    "clean": "rimraf generators/index.js* coverage",
+    "clean": "rm -rf generators/index.{js,js.map} coverage/",
     "lint": "eslint src test --fix",
     "test": "mocha",
     "coverage": "babel-node node_modules/isparta/bin/isparta cover node_modules/mocha/bin/_mocha",
@@ -31,38 +38,32 @@
     "prepublish": "npm run clean && npm run build"
   },
   "dependencies": {
-    "babel-runtime": "^6.5.0",
-    "chalk": "^1.1.0",
-    "git-config": "0.0.6",
-    "lodash.camelcase": "^3.0.1",
-    "lodash.kebabcase": "^3.0.1",
-    "lodash.trim": "^3.0.1",
-    "mkdirp": "^0.5.1",
-    "yeoman-generator": "^0.21.1",
-    "yosay": "^1.0.5"
+    "@babel/node": "7.0.0-beta.55",
+    "@babel/runtime": "7.0.0-beta.55",
+    "chalk": "2.4.1",
+    "git-config": "0.0.7",
+    "lodash.camelcase": "4.3.0",
+    "lodash.kebabcase": "4.1.1",
+    "lodash.trim": "4.5.1",
+    "yeoman-generator": "3.1.1",
+    "yosay": "2.0.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.4.0",
-    "babel-core": "^6.4.0",
-    "babel-eslint": "^5.0.0",
-    "babel-loader": "^6.2.1",
-    "babel-plugin-transform-runtime": "^6.4.3",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-es2015-loose": "^7.0.0",
-    "babel-preset-react": "^6.3.13",
-    "babel-preset-stage-0": "^6.3.13",
-    "chai": "^3.5.0",
-    "eslint": "^1.7.1",
-    "eslint-config-rackt": "^1.1.1",
-    "eslint-plugin-react": "^3.16.1",
-    "isparta": "^4.0.0",
-    "istanbul-coveralls": "^1.0.3",
-    "mocha": "^2.3.4",
-    "yeoman-assert": "^2.0.0",
-    "yo": "^1.5.0"
-  },
-  "engines": {
-    "node": "4.x || 5.x",
-    "npm": "2.x || 3.x"
+    "@babel/cli": "7.0.0-beta.55",
+    "@babel/core": "7.0.0-beta.55",
+    "@babel/plugin-transform-runtime": "7.0.0-beta.55",
+    "@babel/preset-env": "7.0.0-beta.55",
+    "@babel/preset-react": "7.0.0-beta.55",
+    "babel-eslint": "9.0.0-beta.3",
+    "babel-loader": "8.0.0-beta.4",
+    "chai": "4.1.2",
+    "eslint": "5.2.0",
+    "eslint-config-rackt": "1.1.1",
+    "eslint-plugin-react": "7.10.0",
+    "isparta": "4.1.0",
+    "istanbul-coveralls": "1.0.3",
+    "mocha": "5.2.0",
+    "yeoman-assert": "3.1.1",
+    "yo": "2.0.5"
   }
 }
